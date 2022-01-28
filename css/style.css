@@ -1,4 +1,51 @@
-p{
-
-    font-family: 'Roboto', sans-serif;
+/* Elements d'initialisation */
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+h1, h2, h3, P{
+    font-family: 'Roboto' , sans-serif;
+}
+
+/* header */
+
+header{
+    z-index: 99;
+    border: 1px solid red;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translateY(-80px);
+    
+}
+
+#logo{
+    width: 55%;
+}
+
+/* localisation */
+
+#localisation{
+    border: 1px solid green;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #eaeaea;
+    margin-top: 80px;
+}
+#localisation{
+    margin-right: 15px;
+}
+
+
+
+
