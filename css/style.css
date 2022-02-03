@@ -13,7 +13,6 @@ h1, h2, h3, P{
 
 header{
     z-index: 99;
-    border: 1px solid red;
     height: 80px;
     width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -33,7 +32,6 @@ header{
 /* localisation */
 
 #localisation{
-    border: 1px solid green;
     height: 100px;
     line-height: 80px;
     text-align: center;
@@ -49,9 +47,10 @@ header{
 #reservation{
     background-color: #f6f6f6;
     width: 100%;
-    height: 200px;
+    height: 250px;
     text-align: center;
     padding: 50px 40px 60px 40px;
+    
 }
  
 #reservation h1{
@@ -66,8 +65,141 @@ margin-bottom: 15px;
     color: #4d4d4d;
 }
 
+/*bouton*/
+#reservation #btn-reservation{
+width: 280px;
+margin: 10px auto 0 auto;
+height: 60px;
+border-radius: 50px;
+cursor: pointer;
+outline: none;
+border: none;
+color:#F1F1F1;
+box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+background: rgb(255,121,218);
+background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+font-family: 'Roboto' , 'sans-serif';
+font-size: 19px;
+font-weight: 500px;
+transition: .4s ease opacity; /*durée, vitesse de l'animation augmente au milieu puis ralenti vers la fin*/
+}
+
+#reservation #btn-reservation:hover{
+opacity: 0.8;
+}
+
+/*Fonctionnement*/
+
+#fonctionnement{
+  padding: 60px 30px;
+}
+
+#fonctionnement h2{
+  font-size:  30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#fonctionnement .etape{
+  width: 97%;
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  margin: 0 0 30px 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6;
+}
+
+#fonctionnement .etape .numero{
+position: absolute;
+left: -15px;
+background-color: #9356DC;
+border-radius: 50%;
+height: 30px;
+width: 30px;
+text-align: center;
+line-height: 30px;
+font-family: 'Robot', 'sans-serif';
+color: #fff;
+}
+
+#fonctionnement .etape p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#fonctionnement .etape p i{
+margin-right: 25px;
+font-size: 22px;
+color: #4d4d4d;
+}
+
+#fonctionnement .etape:hover{
+background-color: #f5edff;
+}
+
+#fonctionnement .etape:hover p i{
+  color: #9356DC;
+  cursor: pointer;
+}
 
 
+
+/* essaye des animations*/
+/* .home {
+    width: 100%;
+    height: 100vh;
+    min-height: 930px;
+    display: flex;
+    justify-content: center;
+  } */
+
+  /* .bloc {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    padding: 10px 10px;
+  justify-content: center;
+  flex-direction: column;
+  
+  } */
+
+
+
+  /* .bloc p{
+    font-size: 25px;
+    left: 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.8s 0.7s ease-out forwards; 
+  }
+
+  .bloc p  {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  .bloc p:nth-child(1){
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+  .bloc p:nth-child(2){
+    animation: apparition 0.8s 0.4s ease-out forwards;
+  }
+  .bloc p:nth-child(3){
+    animation: apparition 0.8s 0.6s ease-out forwards;
+  }
+  
+  
+
+
+  @keyframes apparition {
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+  } */
 
 
 
