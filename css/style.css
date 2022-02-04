@@ -265,6 +265,52 @@ footer{
 }
 
 
+/*---partie restaurant menu palette goût ----*/
+
+.menu-restaurant .partie{
+ width: 97%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  margin: 0 0 30px 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6; 
+}
+
+.menu-restaurant{
+  padding: 30px 20px;
+}
+
+.menu-restaurant h2{
+  font-size:  20px;
+  font-weight: 600;
+  margin-bottom: 30px; 
+}
+
+
+.baniere-redimension img{
+  width: 100%;
+}
+
+.store{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.store .coeur{
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  /* width: 30px; */
+}
+.store h1{
+margin: 20px 0 0 30px;
+}
 
 
 /* essaye des animations*/
