@@ -217,9 +217,55 @@ width: 100%;
 }
 
 .carte .infos .coeur:hover{
- color: #9356DC;
+ color: #9054da;
+  cursor: pointer;
+  text-shadow: 0px 2px 2px #9054da; /*revoir dans les videos pour la couleur,plus la couleur*/
+}
+
+
+/* footer */
+
+footer{
+  
+  background-color: #918d8d;
+  display: flex;
+  font-size: 22px;
+  padding: 30px 40px;
+  margin-top: 80px;
+}
+
+.footer-services h3{
+  margin: 0 10px 0 40px;
+  color: #918d8d;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.footer-services a:hover{
+  color: #9356DC;
   cursor: pointer;
 }
+
+.bloc-footer-services a{
+  text-decoration: none;
+  color: #918d8d;
+}
+
+
+.bloc-footer-services i{
+  margin-right: 25px;
+  font-size: 22px;
+  color: #4d4d4d;
+  }
+
+.bloc-footer-services li{
+  list-style-type: none;
+  padding: 20px 0 0 0px;
+  margin: 0 10px 0 40px;
+}
+
+
+
 
 /* essaye des animations*/
 /* .home {
