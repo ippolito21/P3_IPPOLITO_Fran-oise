@@ -24,6 +24,24 @@ header{
     transform: translateY(-80px);   
 }
 
+header div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(2px);
+}
+
+header div a{
+  position: absolute;
+  left: 25px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #000;
+}
+
 #logo{
     width: 55%;
 }
@@ -369,7 +387,7 @@ margin: 20px 0 0 30px;
 
 /*-- animations apparition progresive-- */
 
-.home .partie{
+.home .partie p{
 opacity: 0;
  transform: translateY(30px); 
 /*transform: translateY(-30px);*/  /*fait commencer l'animation vers le haut*/
