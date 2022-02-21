@@ -1,0 +1,19 @@
+{
+  "name": "p3_ippolito_francoise",
+  "version": "1.0.0",
+  "description": "P3_IPPOLITO_Francoise",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ippolito21/P3_IPPOLITO_Fran-oise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ippolito21/P3_IPPOLITO_Fran-oise/issues"
+  },
+  "homepage": "https://github.com/ippolito21/P3_IPPOLITO_Fran-oise#readme"
+}
