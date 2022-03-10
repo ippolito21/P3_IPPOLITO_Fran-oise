@@ -23,7 +23,7 @@ h1, h2, h3, p{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 0s linear disparition 2s forwards;
+  animation: 0s linear disparition 3s forwards;
 }
 
 @keyframes disparition {
@@ -128,7 +128,8 @@ h1, h2, h3, p{
   justify-content: center;
   align-items: center;
   position: fixed;
-   transform: translateY(-80px); 
+  transform: translateY(-80px);   
+
 }
 .header-menu{
   transform: none;
@@ -296,7 +297,7 @@ margin-bottom: 30px;
 }
 
 .carte{
-/*height: 300px; */
+
 height: 280px;  /*j'ai ajouté hauteur de 280px*/
 border-radius: 15px;
 box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.05);
@@ -337,22 +338,22 @@ position: absolute;
 }
 
 #note-enchantee{
- bottom: -130px; /*j'ai enlevé -150px trop petit*/
+ bottom: -110px; /*j'ai enlevé -130px trop petit*/
 
 }
 
 #palette-gout{
 width: 110%; 
-bottom: 10px;   
+bottom: 20px;  /*10px*/ 
 }
 
 #la-francaise{
-bottom: 0px;
+bottom: 7px;
 width: 115%;
 }
 
 #delice-sens{
-bottom: 15px; 
+bottom: 28px; /*15px*/
 
 }
 
@@ -378,23 +379,24 @@ width: 30px;
 
 .coeur i{
   font-size: 30px;
-  /* transition: .6s ease all; */
+  transition: .6s ease all; 
   position: absolute;
  
 }
-.coeur i:nth-child(2){
-  opacity: 0; /*2eme coeur enveler la coeur noir de l'icone*/
+ .coeur i:nth-child(2){ 
+  opacity: 0; /*2eme coeur enveler la bordure noir  de l'icone*/
 }
 
-.coeur:hover i:nth-child(1){
-  opacity: 0; /*au clic du 1er coeur pas de couleur*/
+.coeur:hover i:nth-child(1){ 
+  opacity: 0; /*au survol du 1er coeur pas de couleur*/
 }
-.coeur:hover i:nth-child(2){
+ .coeur:hover i:nth-child(2){
   opacity: 1;
-   color: #9356DC; 
+  color: #9356DC;  
   /*au clic du 2eme coeur une opacity 1 et une couleur*/
-   /* background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);   */
-    /*le linear -gradient ne fonctionne pas*/
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -409,8 +411,7 @@ display: flex;
 flex-direction: column;
 font-size: 22px;
 padding: 40px 0px 60px 0;
-/*height: 40vh;*/ /*j'ai changé la hauteur 40hv en 300px ne fonctionne pas*/
-height: 280px; 
+height: 340px;  
 
 }
 
@@ -471,6 +472,7 @@ border-radius: 30px 30px 0 0;
 padding: 25px 20px;
 position: relative;
 z-index: 99;
+margin-top: -60px; 
 }
 
 .menu h1{
@@ -521,7 +523,7 @@ width: 35px;
 
 .menu .coeur-menu i{
   font-size: 30px;
-  /* transition: .6s ease all; */
+  transition: .6s ease all; 
   position: absolute;
 } 
 
@@ -532,27 +534,29 @@ width: 35px;
 .menu .coeur-menu:hover i:nth-child(1){
   opacity: 0;
 }
-
 .menu .coeur-menu:hover i:nth-child(2){
   opacity: 1;
   color: #9356DC; 
-   /*background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);*/   
-    /*le linear -gradient ne fonctionne pas*/
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 } 
 
+
  .img-carte-restau{
- height: 60vh;
+ height: 50vh; /*j'ai enleve 60vh ou 45vh*/
  width: 100%;
  overflow: hidden;
- /* margin-bottom: -60px; */ /*enlever -60px mis -70px*/
  margin-bottom: -70px;
  z-index: -999;
+ position: relative;
 
 } 
 
 .img-carte-restau img{
   width: 100%;
-  height: 220px; /*j'ai ajouté une hauteur pour agrandir l'image*/
+  position: absolute;
+  top: 80px; /*remonte l'image 80px*/
 }
 
 
@@ -567,20 +571,41 @@ border-radius: 20px;
 box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.07);
 background-color: #fff;
 overflow: hidden;
+opacity: 0;
 position: relative;
 transform: translateY(30px);
-animation: apparition 0.8s 0.7s ease-out forwards;
+/* animation: apparition 0.8s 0.7s ease-out forwards; */
 }
 @keyframes apparition{
-  0%{
-    opacity: 0;
-  }
-
+  
   100%{
     opacity: 1;
     transform: none;
   }
 }
+
+/*-- animations apparition progresive-- */
+
+
+
+ .home .plat:nth-child(2){
+  animation: 0.5s apparition 0.2s ease-out forwards;
+}
+
+.home .plat:nth-child(3){
+  animation: 0.5s apparition 0.4s ease-out forwards;
+}
+
+.home .plat:nth-child(4){
+  animation: 0.5s apparition 0.6s ease-out forwards;
+}
+
+.home .plat:nth-child(5){
+  animation: 0.5s apparition 0.8s ease-out forwards;
+}
+
+
+
 
 
 .home .plat:hover{
@@ -597,8 +622,9 @@ cursor: pointer;
  position: absolute;
  left: 0;
  transition: .5s ease width;
+ 
 }
-/*cloche coulissante versde la droite vers la gauche de 0 à 22% de largeur*/
+
 
 .home .plat .description-plat h3{
 margin-bottom: 7px;
@@ -635,7 +661,8 @@ align-items: center;
 transition: .5s ease width;  /*ajout un effet de transition sur la propriété width avec une durée de 5seconde*/
 position: absolute;
 right: 0;
-}  
+} 
+/*coche coulisse de la droite vers la gauche de 0 à 22% de largeur*/ 
 
 .home .plat .check i{
 color: #fff;
@@ -680,24 +707,34 @@ to{
 
 
 
-/*-- animations apparition progresive-- */
 
-.partie{
-  opacity: 0;
-  transform: translateY(10px);
+
+/* écran desktop  */
+
+@media screen and (min-width:640px){
+
+  .carte{
+    height: 400px;
+  }
+  .carte .image-restau{
+    height: 320px;
+  }
+  #note-enchantee{
+    bottom: -260px;
+  }
+  #palette-gout{
+    bottom: -100px;
+  }
+  #la-francaise{
+    bottom: -70px;
+    width: 100%;
+    }
+    
+    #delice-sens{
+    bottom: 15px; 
+    
+    }
+
 }
-
- .partie:nth-child(1){
-  animation: 0.8s apparition 0.2s ease-out forwards;
-}
-
-.partie:nth-child(2){
-  animation: 0.8s apparition 0.6s ease-out forwards;
-}
-
-.partie:nth-child(3){
-  animation: 0.8s apparition 1s ease-out forwards;
-}
-
 
 
