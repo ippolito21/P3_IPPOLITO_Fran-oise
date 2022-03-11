@@ -128,12 +128,13 @@ h1, h2, h3, p{
   justify-content: center;
   align-items: center;
   position: fixed;
-  transform: translateY(-80px);   
+  transform: translateY(-80px);
+  
 
 }
-.header-menu{
+ .header-menu{
   transform: none;
-}
+} 
 
 header div{
 position: relative;
@@ -297,7 +298,6 @@ margin-bottom: 30px;
 }
 
 .carte{
-
 height: 280px;  /*j'ai ajouté hauteur de 280px*/
 border-radius: 15px;
 box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.05);
@@ -344,16 +344,16 @@ position: absolute;
 
 #palette-gout{
 width: 110%; 
-bottom: 20px;  /*10px*/ 
+bottom: 20px;   
 }
 
 #la-francaise{
-bottom: 7px;
+bottom: 7px;  
 width: 115%;
 }
 
 #delice-sens{
-bottom: 15px; /*28px, 15px*/
+bottom: 27px; 
 
 }
 
@@ -472,7 +472,9 @@ border-radius: 30px 30px 0 0;
 padding: 25px 20px;
 position: relative;
 z-index: 99;
-margin-top: -60px; 
+margin-top: -30px;  /*enlever -60px, remonter les images*/
+
+
 }
 
 .menu h1{
@@ -539,10 +541,10 @@ width: 35px;
 
 
  .img-carte-restau{
- height: 58vh; /*j'ai enleve 60vh ou 45vh*/
+ height: 60vh;
  width: 100%;
  overflow: hidden;
- margin-bottom: -70px;
+ margin-bottom: -10px;  /* enlever -70px remonter les images*/
  z-index: -999;
  position: relative;
 
@@ -551,18 +553,12 @@ width: 35px;
 .img-carte-restau img{
   width: 100%;
   position: absolute;
-  top: 30px; /*remonte l'image 80px*/
+  top: 80px; 
 }
 
-.img-carte-restau .modif-img-carte{
+ /* .img-carte-restau .modif-img-carte{
   top: 20px;
-} 
-
-.img-carte-restau .modif1-img-carte{
-  
-  top: 40px;
-} 
-
+} */
 
 
 
@@ -580,7 +576,7 @@ background-color: #fff;
 overflow: hidden;
 opacity: 0;
 position: relative;
-transform: translateY(30px);
+transform: translateY(30px); 
 /* animation: apparition 0.8s 0.7s ease-out forwards; */
 }
 @keyframes apparition{
