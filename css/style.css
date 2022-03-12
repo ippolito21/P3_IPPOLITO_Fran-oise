@@ -155,7 +155,7 @@ color: #000;
 }
 
 .logo{
-  width: 55%;
+  height: 65%;
 }
 
 /* localisation */
@@ -298,7 +298,7 @@ margin-bottom: 30px;
 }
 
 .carte{
-height: 280px;  /*j'ai ajouté hauteur de 280px*/
+height: 280px;  
 border-radius: 15px;
 box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.05);
 margin: 0 0 25px 0;
@@ -338,22 +338,22 @@ position: absolute;
 }
 
 #note-enchantee{
- bottom: -110px; /*j'ai enlevé -130px trop petit*/
+ bottom: -100px; /*-110px;*/ 
 
 }
 
 #palette-gout{
 width: 110%; 
-bottom: 20px;   
+bottom: 10%; /*-20px;*/  
 }
 
 #la-francaise{
-bottom: 7px;  
+bottom: 20px; /*-15px;*/  
 width: 115%;
 }
 
 #delice-sens{
-bottom: 30px; 
+bottom: 15%; /*0;*/
 
 }
 
@@ -411,8 +411,7 @@ display: flex;
 flex-direction: column;
 font-size: 22px;
 padding: 40px 0px 60px 0;
-height: 340px;  
-
+height: 350px;  
 }
 
 
@@ -513,7 +512,7 @@ margin: 50px 0;
 .menu .coeur-menu{
 position: absolute;
 right: 20px;
-top: 35px;
+top: 25px;
 width: 35px;
 }
 
@@ -551,19 +550,13 @@ width: 35px;
 } 
 
 .img-carte-restau img{
-  width: 100%;
+  width: 130%;  /*130%*/
   position: absolute;
-  top: 80px; 
+  top: 50px; /*80px*/
+  left: -30px;
 }
 
- /* .img-carte-restau .modif-img-carte{
-  top: 20px;
-} */
-
-
-
-
-
+ 
 .home .plat{
 display: flex;
 flex-direction: row;
@@ -604,8 +597,6 @@ transform: translateY(30px);
 .home .plat:nth-child(5){
   animation: 0.5s apparition 0.8s ease-out forwards;
 }
-
-
 
 
 
@@ -708,11 +699,13 @@ to{
 
 
 
-
-
 /* écran desktop  */
 
 @media screen and (max-width:430px){
+
+  .logo{
+    height: 40%;
+  }
 
   .img-carte-restau{
     height: 40vh;
@@ -751,7 +744,8 @@ to{
   }
 
   #la-francaise{
-    bottom: -70px;
+    /* bottom: -70px; */
+    bottom: 80px;
     width: 100%;
   }
     
@@ -764,14 +758,13 @@ to{
    } 
    
   .img-carte-restau img{
-    top: 80px;
+    /* top: 80px; */
+    top: 30px;
+    left: -30px;
+  }
+    
   }
 
-  .img-carte-restau .modif-img-carte{
-    top: -30px;
-  }
-
-}
 
 
 
