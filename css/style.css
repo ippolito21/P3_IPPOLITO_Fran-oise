@@ -1,7 +1,7 @@
 
 /*# sourceMappingURL=style.css.map */
 /* Elements d'initialisation */
- *,::before, ::after{
+*,::before, ::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ h1, h2, h3, p{
   100% {
     opacity: 0;
   }
-}  
+} 
 
 /* header */
 
@@ -298,7 +298,7 @@ margin-bottom: 30px;
 }
 
 .carte{
-height: 280px;  
+height: 220px;  
 border-radius: 15px;
 box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.05);
 margin: 0 0 25px 0;
@@ -312,54 +312,81 @@ text-decoration: none;
 
 .carte .image-restau{
 width: 100%;
-height: 200px;    
+height: 150px;  
 overflow: hidden;
 position: relative;
 }
 
-.carte .image-restau .nouveau{
-position: absolute;
-width: 90px;
-height: 30px;
-background-color: #99e2d0;
-color: #008766;
-top: 15px;
-right: 15px;
-text-align: center;
-line-height: 30px;
-border-radius: 2px;
-font-weight: 500;
-z-index: 99;
+#img-note {
+  top: -3px;
+  width: 102%;
+  left: 0px;
 }
-
+.carte .image-restau .nouveau {
+  position: absolute;
+  width: 65px;
+  height: 23px;
+  background-color: #99e2d0;
+  color: #008766;
+  top: 11px;
+  right: 15px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 2px;
+  font-weight: 500;
+  z-index: 99;
+  font-size: 12px;
+}
 .carte .image-restau img{
 width: 100%;
 position: absolute;
 }
 
-#note-enchantee{
- bottom: -100px; /*-110px;*/ 
+#note-enchantee{  
+ width: 100%;
+ top: -68%; 
+ /* position: relative; */
+ transform: translateY(-5%);
+ overflow: hidden;
+}
 
+.note{
+  padding-top: 25px;  
+}
+
+.note-coeur{
+  padding-top: 10px;
+}
+
+/*ajoute pour baisser letitre note enchantée*/
+#note-1{
+  padding-top: 34px;  
+}
+
+#note-coeur-1{
+  padding-top: 15px; 
 }
 
 #palette-gout{
 width: 110%; 
-bottom: 10%; /*-20px;*/  
+bottom: 8px; /*10%;*/ 
+overflow: hidden; 
 }
 
 #la-francaise{
-bottom: 20px; /*-15px;*/  
-width: 115%;
+bottom: 8px;   /*28px;*/ 
+width: 105%;    
+overflow: hidden; 
 }
 
 #delice-sens{
-bottom: 15%; /*0;*/
+bottom: 8px; /*15px*/
 
 }
 
 .carte .infos{
 padding: 15px;
-height: 80px;
+height: 8px; /*80px*/
 position: relative;
 display: flex;
 flex-direction: column;
@@ -373,7 +400,7 @@ margin-bottom: 3px;
 .coeur{
 position: absolute;
 right: 20px;
-top: 25px; 
+top: 0px; 
 width: 30px;
 }
 
@@ -485,7 +512,7 @@ flex-wrap: nowrap;
 }
 
 .menu-restaurant{
-margin: 50px 0; 
+margin: 20px 0; 
 
 }
 
@@ -539,7 +566,7 @@ width: 35px;
 
 
  .img-carte-restau{
- height: 60vh;
+ height: 69vh;
  width: 100%;
  overflow: hidden;
  margin-bottom: -10px;  /* enlever -70px remonter les images*/
@@ -548,13 +575,14 @@ width: 35px;
 
 } 
 
-.img-carte-restau img{
-  width: 130%;  /*130%*/
-  position: absolute;
-  top: 50px; /*80px*/
-  left: -30px;
-}
 
+
+.img-carte-restau img {
+  width: 110%;
+  position: absolute;
+  top: 80px;
+  left: -15px;
+}
  
 .home .plat{
 display: flex;
@@ -705,19 +733,12 @@ to{
   .logo{
     height: 40%;
   }
-
-  .img-carte-restau{
-    height: 40vh;
    
-   } 
-   
-   .img-carte-restau img{
-     top: 50px;
-   }
 
-   .img-carte-restau .modif-img-carte{
+
+   /* .img-carte-restau .modif-img-carte{
     top: 25px;
-  }
+  }  */
 
 }
 
@@ -736,6 +757,7 @@ to{
 
   #note-enchantee{
     bottom: -260px;
+    font-size: 60%; 
   }
 
   #palette-gout{
@@ -743,7 +765,6 @@ to{
   }
 
   #la-francaise{
-    /* bottom: -70px; */
     bottom: 80px;
     width: 100%;
   }
@@ -836,7 +857,11 @@ to{
   }
 
   #note-enchantee{
-    bottom: -260px;
+    width: 110%;  
+    bottom: 60%; 
+    position: relative;
+    transform: translateY(-4%);
+    overflow: hidden;
   }
 
   #palette-gout{
