@@ -37,7 +37,7 @@ h1, h2, h3, p{
 }
 
 .lds-spinner {
-  color: official;
+  color: #1a1919;   
   display: inline-block;
   position: relative;
   width: 80px;
